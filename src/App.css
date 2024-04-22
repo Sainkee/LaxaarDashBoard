@@ -1,0 +1,104 @@
+/* Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Main Header */
+.header {
+  background-color: white;
+  /* Avoid using !important unless necessary */
+  height: -moz-fit-content;
+  height: fit-content;
+  z-index: 100;
+  position: relative;
+  box-shadow: 0px 18px 13px -4px rgba(0, 0, 0, 0.1);
+}
+
+.headSection {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  padding: 0% 3em;
+}
+.headSection .anticon {
+  border: none;
+  font-size: 50px;
+  outline: none;
+}
+.headSection .anticon:focus {
+  outline: none;
+  border: none;
+}
+.headSection .iconDot {
+  width: 1.2em;
+  height: 1.2em;
+  border-radius: 50%;
+  background-color: black !important;
+  margin-left: 0.8em;
+}
+.headSection .navLogo {
+  z-index: 10;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: black;
+}
+.headSection .navText {
+  display: flex;
+  flex-direction: column;
+  line-height: 1;
+  align-items: flex-end;
+}
+.headSection .navText .navTextBold {
+  font-weight: 800;
+  font-size: 1.2em;
+}
+.headSection .navText .navtextserviceJob {
+  transform: translate(2em);
+  color: rgb(75, 73, 73);
+}
+
+.mainHead {
+  display: flex;
+  justify-content: space-between;
+}
+
+.usersection {
+  display: flex;
+  justify-content: space-between;
+  gap: 2em;
+}
+.usersection .navLang {
+  background-color: rgba(248, 111, 96, 0.1411764706);
+  padding: 0.6em 1em;
+  border-radius: 20px;
+  color: #f87060;
+}
+.usersection .navLang span {
+  padding: 0 4px;
+}
+.usersection .navbar-img-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.8em;
+}
+.usersection .navbar-img-container .navbar-img {
+  height: 3em;
+  width: 3em;
+  border-radius: 50%;
+  border: 3px solid orangered;
+}
+
+.Doc > span {
+  padding: 0.6em 1em;
+  background-color: #f87060; /* Added semicolon */
+  border-radius: 20px;
+  text-transform: uppercase;
+  color: white;
+}
+
+/* Sidebar (Sider) *//*# sourceMappingURL=App.css.map */

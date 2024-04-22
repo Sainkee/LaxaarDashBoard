@@ -1,10 +1,11 @@
 import React from "react";
 import { MenuFoldOutlined, MenuUnfoldOutlined } from "@ant-design/icons";
-import { Layout, Button } from "antd";
+import { Button } from "antd";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faFile ,faEarthAmericas ,faCaretDown} from '@fortawesome/free-solid-svg-icons';
 
 
-
-function Head({ collapsed, setCollapsed }) {
+function Head({ collapsed, setCollapsed ,imageUrl}) {
   return (
     <>
       <div className="mainHead">
@@ -25,6 +26,12 @@ function Head({ collapsed, setCollapsed }) {
             </div>
           </div>
         </div>
+        <div className="usersection">
+          <div className="Doc"> <span>   <FontAwesomeIcon icon={faFile} />   Documentaion</span></div>
+          <div><span className="navLang"><FontAwesomeIcon icon={faEarthAmericas}  /> <span> English</span>  <FontAwesomeIcon icon={faCaretDown} /></span></div>
+          <div className="navbar-img-container"><img src={imageUrl} className ="navbar-img" alt="User Profile" /></div>
+        </div>
+        
         
       </div>
     </>

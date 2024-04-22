@@ -7,14 +7,16 @@
 
 /* Main Header */
 .header {
-  background-color: rgba(191, 30, 30, 0.8);
+  background-color: white;
   /* Avoid using !important unless necessary */
   height: fit-content;
+  z-index: 100;
+  position: relative;
+  box-shadow: 0px 18px 13px -4px rgba(0, 0, 0, 0.1);
 }
 
 .headSection {
   display: flex;
-  background-color: rgb(17, 115, 200);
   justify-content: start;
   align-items: center;
   padding: 0% 3em;
@@ -55,18 +57,54 @@
     }
     .navtextserviceJob {
       transform: translate(2em);
+      color: rgb(75, 73, 73);
     }
   }
 }
-.mainhead {
+.mainHead {
   display: flex;
   justify-content: space-between;
 }
 
+.usersection {
+  display: flex;
+  justify-content: space-between;
+  gap: 2em;
+  .navLang{
+    background-color: #f86f6024;
+    padding: 0.6em 1em;
+    border-radius: 20px;
+    color: #f87060;
+   span{
+    padding: 0 4px;
+   }
 
+  }
+.navbar-img-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.8em;
+ 
 
+  .navbar-img{
+    height: 3em;
+    width: 3em;
+    border-radius: 50%;
+    border: 3px solid orangered;
 
+  }
+}
+  
+}
 
+.Doc > span {
+  padding: 0.6em 1em;
+  background-color: #f87060; /* Added semicolon */
+  border-radius: 20px;
+  text-transform: uppercase;
+  color: white;
+}
 
 /* Sidebar (Sider) */
 // .sideBar {

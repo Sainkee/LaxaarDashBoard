@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Layout } from "antd";
-import "./App.scss";
+import "./App.css";
 import Head from "./components/Head";
 import SideBar from "./components/SideBar";
 
@@ -11,8 +11,8 @@ function App() {
 
   return (
     <Layout style={{ minHeight: "100vh", width: "100vw" }}>
-      <Header className="header" style={{ padding: "0px" }}>
-        <Head collapsed={collapsed} setCollapsed={setCollapsed} />
+      <Header className="header" style={{ padding: "0px" }} theme="toolkit">
+        <Head collapsed={collapsed} setCollapsed={setCollapsed} imageUrl={"https://images.pexels.com/photos/1043471/pexels-photo-1043471.jpeg?auto=compress&cs=tinysrgb&w=600"} />
       </Header>
       <Layout>
         <Sider
