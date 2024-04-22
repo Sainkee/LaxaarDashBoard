@@ -1,0 +1,79 @@
+/* Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Main Header */
+.header {
+  background-color: rgba(191, 30, 30, 0.8);
+  /* Avoid using !important unless necessary */
+  height: fit-content;
+}
+
+.headSection {
+  display: flex;
+  background-color: rgb(17, 115, 200);
+  justify-content: start;
+  align-items: center;
+  padding: 0% 3em;
+
+  .anticon {
+    border: none;
+    font-size: 50px;
+    outline: none;
+    &:focus {
+      outline: none;
+      border: none;
+    }
+  }
+  .iconDot {
+    width: 1.2em;
+    height: 1.2em;
+    border-radius: 50%;
+    background-color: black !important;
+    margin-left: 0.8em;
+  }
+  .navLogo {
+    z-index: 10;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+  }
+  .navText {
+    display: flex;
+
+    flex-direction: column;
+    line-height: 1;
+    align-items: flex-end;
+    .navTextBold {
+      font-weight: 800;
+      font-size: 1.2em;
+    }
+    .navtextserviceJob {
+      transform: translate(2em);
+    }
+  }
+}
+.mainhead {
+  display: flex;
+  justify-content: space-between;
+}
+
+
+
+
+
+
+/* Sidebar (Sider) */
+// .sideBar {
+//   height: 100vh;
+//   position: sticky;
+//   background-color: aquamarine;
+//   left: 0;
+//   bottom: 0;
+//   top: 0;
+// }
