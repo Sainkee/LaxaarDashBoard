@@ -172,7 +172,7 @@
 
 .content-Section {
   background-image: url("./assets/Vector.png");
-  background-color: rgba(255, 253, 253, 1);
+  background-color: #f0d8d511;
 
   padding: 1em;
   background-size: cover; /* Ensure the image covers the entire element */
@@ -190,21 +190,28 @@
     color: rgba(77, 71, 71, 0.874);
     font-weight: 600;
     font-size: 2rem;
+    margin-bottom: 1em;
   }
 
   .customerDataSection {
-    box-shadow: 0px 18px 13px -4px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 10px 13px 10px rgba(0, 0, 0, 0.1);
     width: 80vw;
+    padding: 1em;
     position: absolute;
+    background-color: white;
+    border-radius: 0.8em;
     .InputText {
       color: #f87060;
       border: 1px solid #f87060;
       outline: none;
+      margin-bottom: 0.8em;
       border-radius: 8px;
       background-color: transparent;
       padding: 0.8em 1em;
+    
       &::placeholder {
         color: #f87060;
+
       }
     }
   }
@@ -233,4 +240,9 @@
 .status-uncompleted {
   color: rgb(249, 5, 5);
 }
+.fa-icon{
+  border-color: #f87060;
+  margin-right: 0.8em;
+  color: #f87060;
 
+}

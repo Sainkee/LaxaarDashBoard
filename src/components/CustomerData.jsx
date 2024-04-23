@@ -10,7 +10,7 @@ function CustomerData() {
           <input
             type="text"
             className="InputText"
-            placeholder="&#128269; Search..."
+            placeholder=" Search..."
           />
         </div>
         <CustomerInfo />

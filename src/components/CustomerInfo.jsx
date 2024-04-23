@@ -29,41 +29,41 @@ const columns = [
     title: "Status",
     dataIndex: "status",
     render: (text) => {
-    
-        const statusClass = text === 'Completed' ? 'status-completed' :
-                            text === 'progress' ? 'status-progress' :
-                            'status-uncompleted';
+      const statusClass =
+        text === "Completed"
+          ? "status-completed"
+          : text === "progress"
+          ? "status-progress"
+          : "status-uncompleted";
 
-        return (
-            <span className={statusClass}>
-                {text}
-            </span>
-        );
+      return <span className={statusClass}>{text}</span>;
     },
   },
   {
-    title: 'Actions',
-    dataIndex: 'actions',
+    title: "Actions",
+    dataIndex: "actions",
     render: (actions, record) => (
-        <div>
-            {/* Edit button with Font Awesome edit icon */}
-            {actions.includes('Edit') && (
-                <Button
-                    icon={<FontAwesomeIcon icon={faEdit} />}
-                    style={{ marginRight: 8 }}
-                    onClick={() => handleEdit(record)}
-                />
-            )}
-            {/* Delete button with Font Awesome trash icon */}
-            {actions.includes('Delete') && (
-                <Button
-                    icon={<FontAwesomeIcon icon={faTrash} />}
-                    onClick={() => handleDelete(record)}
-                />
-            )}
-        </div>
+      <div>
+        {/* Edit button with Font Awesome edit icon */}
+        {actions.includes("Edit") && (
+          <Button
+            
+            icon={<FontAwesomeIcon icon={faEdit} />}
+            className="fa-icon"
+            onClick={() => handleEdit(record)}
+          />
+        )}
+        {/* Delete button with Font Awesome trash icon */}
+        {actions.includes("Delete") && (
+          <Button
+            className="fa-icon"
+            icon={<FontAwesomeIcon icon={faTrash} />}
+            onClick={() => handleDelete(record)}
+          />
+        )}
+      </div>
     ),
-},
+  },
 ];
 
 const data = [
@@ -153,7 +153,16 @@ const CustomerInfo = () => {
 
   return (
     <div>
-      <Table className="TableOfdata" rowSelection={rowSelection} columns={columns} dataSource={data} />
+      <Table
+        className="TableOfdata"
+        rowSelection={rowSelection}
+        columns={columns}
+        dataSource={data}
+        pagination={{
+          pageSize: 4,
+          showQuickJumper: true, // Optional: allow quick jumping between pages
+        }}
+      />
     </div>
   );
 };
