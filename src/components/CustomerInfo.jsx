@@ -159,7 +159,7 @@ const CustomerInfo = () => {
         columns={columns}
         dataSource={data}
         pagination={{
-          pageSize: 6,
+          pageSize: 5,
           showQuickJumper: true, // Optional: allow quick jumping between pages
         }}
       />
