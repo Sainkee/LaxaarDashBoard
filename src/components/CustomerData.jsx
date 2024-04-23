@@ -1,5 +1,6 @@
 import React from "react";
 import CustomerInfo from "./CustomerInfo";
+import { SearchOutlined } from '@ant-design/icons';
 
 function CustomerData() {
  
@@ -7,10 +8,12 @@ function CustomerData() {
     <>
       <div className="customerDataSection">
         <div className="inputBox">
+        <SearchOutlined className="searchIcon"/>
           <input
             type="text"
             className="InputText"
-            placeholder=" Search..."
+            placeholder="   Search..."
+           
           />
         </div>
         <CustomerInfo />

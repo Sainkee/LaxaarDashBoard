@@ -241,8 +241,19 @@
   color: rgb(249, 5, 5);
 }
 .fa-icon{
+  border: none;
   border-color: #f87060;
   margin-right: 0.8em;
   color: #f87060;
 
+  &:hover,
+  &:active {
+      border: 1px solid #f87060;
+  }
+
+}
+
+.searchIcon{
+  color: #f87060;
+  transform: translate(1.5em);
 }
