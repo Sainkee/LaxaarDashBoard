@@ -1,19 +1,16 @@
-
-import React from 'react';
-
+import React from "react";
+import CustomerData from "./CustomerData";
+import CustomerInfo from "./CustomerInfo";
 function Customer(params) {
-
-    return(
-
-        <> 
-        <div className='customer-sec '>
+  return (
+    <>
+      <div className="customer-sec ">
         <h1>Customer</h1>
-
-        </div>
-        
-        </>
-    )
-    
+        <CustomerData />
+       
+      </div>
+    </>
+  );
 }
 
 export default Customer;

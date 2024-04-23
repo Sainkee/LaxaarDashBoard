@@ -4,7 +4,7 @@
   padding: 0;
   box-sizing: border-box;
 }
-:root{
+:root {
   background-color: white !important;
 }
 
@@ -74,43 +74,37 @@
   display: flex;
   justify-content: space-between;
   gap: 2em;
-  .navLang{
+  .navLang {
     background-color: #f86f6024;
     padding: 0.6em 1em;
     border-radius: 20px;
     color: #f87060;
-   span{
-    padding: 0 4px;
-   }
-
+    span {
+      padding: 0 4px;
+    }
   }
-.navbar-img-container{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 0.8em;
- 
+  .navbar-img-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.8em;
 
-  .navbar-img{
-    height: 3em;
-    width: 3em;
-    border-radius: 50%;
-    border: 3px solid orangered;
-
+    .navbar-img {
+      height: 3em;
+      width: 3em;
+      border-radius: 50%;
+      border: 3px solid orangered;
+    }
   }
 }
-  
-}
 
-.pop-img{
+.pop-img {
   height: 3em;
   width: 3em;
   border-radius: 50%;
   border: 3px solid orangered;
-
-
 }
-.popoverContent-data{
+.popoverContent-data {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -119,14 +113,12 @@
   border-radius: 10px;
 
   gap: 1em;
-  
-  
 }
-.devider{
+.devider {
   height: 2px;
   width: 100%;
   background-color: rgba(191, 191, 192, 0.804);
-  margin: 1em 0 ;
+  margin: 1em 0;
 }
 
 .Doc > span {
@@ -137,7 +129,6 @@
   color: white;
 }
 
-
 .sideBar {
   height: 100vh;
   width: 5000px;
@@ -147,15 +138,14 @@
   top: 0;
 }
 
-.ant-layout-sider-trigger{
+.ant-layout-sider-trigger {
   display: none;
 }
-
 
 .ant-menu-item {
   /* Base styles for the menu item */
   color: rgb(72, 69, 69) !important;
-  
+
   /* Styles for focus and active states */
   &:focus,
   &:active {
@@ -167,7 +157,7 @@
   /* Pseudo-element for the dot on the left side when active */
   &:focus::before,
   &:active::before {
-    content: '';
+    content: "";
     display: block;
     width: 0.5em; /* Adjust the width of the dot */
     height: 2em; /* Adjust the height of the dot */
@@ -177,41 +167,70 @@
     left: 0.5em; /* Adjust the dot position from the left */
     top: 50%; /* Center the dot vertically */
     transform: translateY(-50%); /* Adjust the vertical alignment */
- 
   }
 }
 
- 
+.content-Section {
+  background-image: url("./assets/Vector.png");
+  background-color: rgba(255, 253, 253, 1);
 
+  padding: 1em;
+  background-size: cover; /* Ensure the image covers the entire element */
+  background-repeat: no-repeat; /* Prevent the image from repeating */
+  background-position: center; /* Center the image */
+  width: 100%;
+  height: 115dvh;
+  gap: 1em;
+}
 
+.customer-sec {
+  padding: 0.8em;
 
-  .content-Section {
-  
-    background-image: url('./assets/Vector.png');
-    background-color:rgba(255, 253, 253, 1);
-  
-   padding: 1em;
-    background-size: cover; /* Ensure the image covers the entire element */
-    background-repeat: no-repeat; /* Prevent the image from repeating */
-    background-position: center; /* Center the image */
-    width: 100%;
-   height: 115dvh;
-    gap: 1em;
-   
-   
+  h1 {
+    color: rgba(77, 71, 71, 0.874);
+    font-weight: 600;
+    font-size: 2rem;
   }
-  
-  .customer-sec{
-   
-    margin-top: 10px;
-   
-    padding: 0.8em;
 
-   
-
-    h1{
-      color: rgba(77, 71, 71, 0.874);
-      font-weight: 600;
+  .customerDataSection {
+    box-shadow: 0px 18px 13px -4px rgba(0, 0, 0, 0.1);
+    width: 80vw;
+    position: absolute;
+    .InputText {
+      color: #f87060;
+      border: 1px solid #f87060;
+      outline: none;
+      border-radius: 8px;
+      background-color: transparent;
+      padding: 0.8em 1em;
+      &::placeholder {
+        color: #f87060;
+      }
     }
-   
   }
+  .inputBox {
+    position: relative;
+    float: right;
+  }
+}
+
+.TableOfdata {
+  width: 85vw;
+}
+.ant-pagination {
+  justify-content: center !important;
+  color: #f87060 !important;
+}
+
+.status-completed {
+  color: green;
+}
+
+.status-progress {
+ color: orange ;
+}
+
+.status-uncompleted {
+  color: rgb(249, 5, 5);
+}
+

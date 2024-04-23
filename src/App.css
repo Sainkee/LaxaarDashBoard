@@ -177,10 +177,54 @@
 }
 
 .customer-sec {
-  margin-top: 10px;
   padding: 0.8em;
 }
 .customer-sec h1 {
   color: rgba(77, 71, 71, 0.874);
   font-weight: 600;
+  font-size: 2rem;
+}
+.customer-sec .customerDataSection {
+  box-shadow: 0px 18px 13px -4px rgba(0, 0, 0, 0.1);
+  width: 80vw;
+  position: absolute;
+}
+.customer-sec .customerDataSection .InputText {
+  color: #f87060;
+  border: 1px solid #f87060;
+  outline: none;
+  border-radius: 8px;
+  background-color: transparent;
+  padding: 0.8em 1em;
+}
+.customer-sec .customerDataSection .InputText::-moz-placeholder {
+  color: #f87060;
+}
+.customer-sec .customerDataSection .InputText::placeholder {
+  color: #f87060;
+}
+.customer-sec .inputBox {
+  position: relative;
+  float: right;
+}
+
+.TableOfdata {
+  width: 85vw;
+}
+
+.ant-pagination {
+  justify-content: center !important;
+  color: #f87060 !important;
+}
+
+.status-completed {
+  color: green;
+}
+
+.status-progress {
+  color: orange;
+}
+
+.status-uncompleted {
+  color: rgb(249, 5, 5);
 }/*# sourceMappingURL=App.css.map */
