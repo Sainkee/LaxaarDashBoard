@@ -4,6 +4,9 @@
   padding: 0;
   box-sizing: border-box;
 }
+:root{
+  background-color: white !important;
+}
 
 /* Main Header */
 .header {
@@ -17,9 +20,10 @@
 
 .headSection {
   display: flex;
-  justify-content: start;
+  // justify-content: start;
   align-items: center;
-  padding: 0% 3em;
+  // padding: 0% 2em;
+  padding: 0 2rem;
 
   .anticon {
     border: none;
@@ -98,6 +102,33 @@
   
 }
 
+.pop-img{
+  height: 3em;
+  width: 3em;
+  border-radius: 50%;
+  border: 3px solid orangered;
+
+
+}
+.popoverContent-data{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 0.8em;
+  border-radius: 10px;
+
+  gap: 1em;
+  
+  
+}
+.devider{
+  height: 2px;
+  width: 100%;
+  background-color: rgba(191, 191, 192, 0.804);
+  margin: 1em 0 ;
+}
+
 .Doc > span {
   padding: 0.6em 1em;
   background-color: #f87060; /* Added semicolon */
@@ -106,12 +137,81 @@
   color: white;
 }
 
-/* Sidebar (Sider) */
-// .sideBar {
-//   height: 100vh;
-//   position: sticky;
-//   background-color: aquamarine;
-//   left: 0;
-//   bottom: 0;
-//   top: 0;
-// }
+
+.sideBar {
+  height: 100vh;
+  width: 5000px;
+  position: sticky;
+  background-color: aquamarine;
+  left: 0;
+  top: 0;
+}
+
+.ant-layout-sider-trigger{
+  display: none;
+}
+
+
+.ant-menu-item {
+  /* Base styles for the menu item */
+  color: rgb(72, 69, 69) !important;
+  
+  /* Styles for focus and active states */
+  &:focus,
+  &:active {
+    background-color: #f86f6029 !important;
+    border-radius: 34px;
+    color: #f87060 !important;
+  }
+
+  /* Pseudo-element for the dot on the left side when active */
+  &:focus::before,
+  &:active::before {
+    content: '';
+    display: block;
+    width: 0.5em; /* Adjust the width of the dot */
+    height: 2em; /* Adjust the height of the dot */
+    background-color: #f87060; /* Set the dot color */
+    border-radius: 34px; /* Make the dot circular */
+    position: absolute;
+    left: 0.5em; /* Adjust the dot position from the left */
+    top: 50%; /* Center the dot vertically */
+    transform: translateY(-50%); /* Adjust the vertical alignment */
+ 
+  }
+}
+
+ 
+
+
+
+  .content-Section {
+  
+    background-image: url('./assets/Vector.png');
+    background-color:rgba(255, 253, 253, 1);
+  
+   padding: 1em;
+    background-size: cover; /* Ensure the image covers the entire element */
+    background-repeat: no-repeat; /* Prevent the image from repeating */
+    background-position: center; /* Center the image */
+    width: 100%;
+   height: 115dvh;
+    gap: 1em;
+   
+   
+  }
+  
+  .customer-sec{
+   
+    margin-top: 10px;
+   
+    padding: 0.8em;
+
+   
+
+    h1{
+      color: rgba(77, 71, 71, 0.874);
+      font-weight: 600;
+    }
+   
+  }
