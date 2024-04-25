@@ -152,16 +152,17 @@ const CustomerInfo = () => {
   };
 
   return (
-    <div>
+    <div style={{width:"100%", display:"flex", justifyContent:"center" }}>
       <Table
         className="TableOfdata"
         rowSelection={rowSelection}
         columns={columns}
         dataSource={data}
+    
+        colSpan = {4}
         pagination={{
           pageSize: 5,
-          showQuickJumper: true, // Optional: allow quick jumping between pages
-        }}
+          showQuickJumper: true }}
       />
     </div>
   );
